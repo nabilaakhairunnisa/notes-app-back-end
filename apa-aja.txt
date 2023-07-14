@@ -1,0 +1,46 @@
+=====================GIT===================
+PUSH simpan perubahan
+PULL update perubahan
+
+================INSTANCE ES2===============
+ID: 
+634809615812
+
+User name: 
+nabila
+
+Password: 
+Bismillah!25
+
+Console sign-in URL: 
+https://634809615812.signin.aws.amazon.com/console
+
+connect: 
+ssh -i "notes-api-webserver.pem" ubuntu@ec2-18-138-230-205.ap-southeast-1.compute.amazonaws.com
+ssh -i /C:/notes-app-back-end/notes-api-webserver.pem ubuntu@ec2-18-138-230-205.ap-southeast-1.compute.amazonaws.com
+
+Ubah Direktori:
+cd notes-app-back-end/
+
+Jalankan Server:
+npm run start-prod
+
+Akses Server:
+http://18.138.230.205:5000/notes
+
+================POSTMAN===============
+
+me-restart proses secara manual dengan cara:
+pm2 restart notes-api
+
+Atau, menghentikan prosesnya dengan cara:
+pm2 stop notes-api
+
+Untuk menjalankan kembali proses, gunakan perintah:
+pm2 start notes-api
+
+Postman Collection: 
+Berisi kumpulan request 
+
+Postman Environment:
+Berisi kumpulan variabel atau id yang digunakan untuk menjalankan request

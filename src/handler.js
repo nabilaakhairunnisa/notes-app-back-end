@@ -16,11 +16,12 @@ const addNoteHandler = (request, h) => {
   if (isSuccess) {
     const response = h.response({
       status: 'success',
-      message: 'Catatan  berhasil ditambahkan',
+      message: 'Catatan berhasil ditambahkan',
       data: {
         noteId: id,
       },
     });
+
     response.code(201);
 
     response.header('Access-Control-Allow-Origin', '*');
